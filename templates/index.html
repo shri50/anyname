@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement </title>
+</head>
+<body>
+    <form method='POST' action="/predict">
+        <label> CGPA:: </label><br>
+        <input type="text" name="cgpa_index"><br> <br>
+
+        <label> IQ:: </label><br>
+        <input type="text" name="iq_index"><br> <br>
+
+        <label> Profile Score:: </label><br>
+        <input type="text" name="profile_score_index"><br> <br>
+
+
+        <input type="submit" value="PREDICTION">
+       {% if prediction %}
+       
+         {{prediction}}
+
+        {% endif %}
+
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
